@@ -1,4 +1,5 @@
 # Commands
+alias ls="ls --color=tty"
 alias ll="ls -laph"
 alias l="ls -lph"
 alias cd="cd -P"
