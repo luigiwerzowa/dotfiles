@@ -9,6 +9,7 @@ export EDITOR=vim
 # Plugins from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
+zplug 'plugins/colored-man-pages', from:oh-my-zsh
 
 # Homeshick
 zplug "andsens/homeshick", use:"homeshick.sh", defer:0
