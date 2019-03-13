@@ -3,8 +3,8 @@ source $HOME/.zplug/init.zsh
 # To manage zplug itself like other packages
 zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 
-# To avoid having VIM mode in the shell (when $EDITOR is set to vim)
-bindkey -e
+# Editor
+export EDITOR=vim
 
 # Plugins from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
