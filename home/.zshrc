@@ -15,6 +15,26 @@ zplug 'plugins/colored-man-pages', from:oh-my-zsh
 zplug "andsens/homeshick", use:"homeshick.sh", defer:0
 zplug "andsens/homeshick", use:"completions", defer:2
 
+# FZF
+#
+# FZF is a fuzzy command line finder. Great for finding files
+# and traversing your history.
+#
+# Website: https://github.com/junegunn/fzf
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+zplug "junegunn/fzf-bin", from:gh-r, as:command, rename-to:fzf
+zplug "junegunn/fzf", use:"shell/*.zsh", defer:2
+
+# Enhancd
+#
+# Helps you with cd. Alternative to autojump.
+#
+# Website: https://github.com/b4b4r07/enhancd
+zplug "b4b4r07/enhancd", use:init.sh
+
+# Improve look of fzf, especially for enhancd
+export FZF_DEFAULT_OPTS='--height 50% --ansi'
+
 # Syntax highlighting for commands, load last
 # https://github.com/zsh-users/zsh-syntax-highlighting
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
