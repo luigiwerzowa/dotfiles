@@ -3,6 +3,7 @@ alias ls="ls --color=tty"
 alias ll="ls -laph"
 alias l="ls -lph"
 alias cd="cd -P"
+alias lgrep="ll | egrep -i"
 
 # Files
 alias aliases="vim ~/.aliases"
@@ -13,4 +14,8 @@ alias vimrc="vim ~/.vimrc"
 alias grep="grep --color=auto"
 alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
-alias pcregrep="egrep --color=auto"
+alias pcregrep="pcregrep --color=auto"
+
+# JMP
+alias jmp-refactor="mvn eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
+alias jmp-refactor-debug="mvnDebug eu.jsparrow:jsparrow-maven-plugin:1.1.0-SNAPSHOT:refactor"
