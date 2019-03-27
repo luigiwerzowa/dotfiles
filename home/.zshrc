@@ -6,10 +6,11 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # Editor
 export EDITOR=vim
 
-# Plugins from oh-my-zsh
+# Plugins and libs from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
-zplug "lib/completion", from:oh-my-zsh
 zplug 'plugins/colored-man-pages', from:oh-my-zsh
+zplug "lib/completion", from:oh-my-zsh
+zplug "lib/key-bindings", from:oh-my-zsh
 zplug "lib/directories", from:oh-my-zsh
 
 # Homeshick
