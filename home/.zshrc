@@ -10,6 +10,7 @@ export EDITOR=vim
 zplug "plugins/git", from:oh-my-zsh
 zplug "lib/completion", from:oh-my-zsh
 zplug 'plugins/colored-man-pages', from:oh-my-zsh
+zplug "lib/directories", from:oh-my-zsh
 
 # Homeshick
 zplug "andsens/homeshick", use:"homeshick.sh", defer:0
@@ -52,8 +53,6 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 export PATH=~/.local/bin:$PATH
 
-source $HOME/.aliases
-
 # Actually install plugins, prompt user input
 if ! zplug check --verbose; then
     printf "Install zplug plugins? [y/N]: "
@@ -63,6 +62,8 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
+source $HOME/.aliases
 
 # History Tweaks
 #
