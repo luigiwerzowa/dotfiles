@@ -20,6 +20,7 @@ JMP_VERSION="2.0.1"
 
 alias jmp-refactor='mvn eu.jsparrow:jsparrow-maven-plugin:'"$JMP_VERSION"':refactor'
 alias jmp-refactor-debug='mvnDebug eu.jsparrow:jsparrow-maven-plugin:'"$JMP_VERSION"':refactor'
+alias jmp-global='mvn eu.jsparrow:jsparrow-maven-plugin:'"$JMP_VERSION"':refactor -DconfigFile=/home/'"$USER"'/maven-workspace/jsparrow.yml'
 
 function jmp() {
 	mvn eu.jsparrow:jsparrow-maven-plugin:$JMP_VERSION:$1
