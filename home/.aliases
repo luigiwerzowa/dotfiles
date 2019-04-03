@@ -17,8 +17,9 @@ alias pcregrep="pcregrep --color=auto"
 
 # JMP
 JMP_VERSION="2.0.1"
-alias jmp-refactor="mvn eu.jsparrow:jsparrow-maven-plugin:$JMP_VERSION:refactor"
-alias jmp-refactor-debug="mvnDebug eu.jsparrow:jsparrow-maven-plugin:$JMP_VERSION:refactor"
+
+alias jmp-refactor='mvn eu.jsparrow:jsparrow-maven-plugin:'"$JMP_VERSION"':refactor'
+alias jmp-refactor-debug='mvnDebug eu.jsparrow:jsparrow-maven-plugin:'"$JMP_VERSION"':refactor'
 
 function jmp() {
 	mvn eu.jsparrow:jsparrow-maven-plugin:$JMP_VERSION:$1
