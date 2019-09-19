@@ -20,6 +20,9 @@ zplug "lib/directories", from:oh-my-zsh
 zplug "andsens/homeshick", use:"homeshick.sh", defer:0
 zplug "andsens/homeshick", use:"completions", defer:2
 
+# Alias reminder
+zplug "MichaelAquilina/zsh-you-should-use"
+
 # FZF
 #
 # FZF is a fuzzy command line finder. Great for finding files
