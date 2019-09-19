@@ -6,6 +6,9 @@ zplug 'zplug/zplug', hook-build:'zplug --self-manage'
 # Editor
 export EDITOR=vim
 
+# npm
+export PATH=~/.npm-global/bin:$PATH
+
 # Plugins and libs from oh-my-zsh
 zplug "plugins/git", from:oh-my-zsh
 zplug 'plugins/colored-man-pages', from:oh-my-zsh
