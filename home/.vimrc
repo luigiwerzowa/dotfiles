@@ -1,3 +1,3 @@
-:source /usr/share/vim/vim81/defaults.vim
+source $VIMRUNTIME/defaults.vim
 
 set mouse-=a
