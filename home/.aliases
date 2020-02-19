@@ -1,8 +1,11 @@
 # Commands
-alias ls="ls --color=tty"
+alias ls="ls --color=always"
 alias ll="ls -laph"
 alias l="ls -lph"
 alias lgrep="ll | egrep -i"
+
+# Have less with colors
+alias less="less -R"
 
 # Files
 alias aliases="vim ~/.aliases"
