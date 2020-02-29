@@ -18,6 +18,9 @@ alias fgrep="fgrep --color=auto"
 alias egrep="egrep --color=auto"
 alias pcregrep="pcregrep --color=auto"
 
+# Shortcuts
+alias c="code ."
+
 # JMP
 JMP_VERSION="2.0.1"
 
