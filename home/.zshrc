@@ -48,6 +48,10 @@ export FZF_DEFAULT_OPTS='--height 50% --ansi'
 zplug "zsh-users/zsh-syntax-highlighting", from:github, defer:3
 
 # Theme
+# NOTE: This theme uses special fonts for displaying git/docker/.. icons.
+#       Install the following fonts to have everything displayed nicely (both are in pacman):
+#           ttf-fira-code
+#           noto-fonts-emoji
 zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, as:theme
 SPACESHIP_TIME_SHOW="true"
 SPACESHIP_TIME_COLOR="red"
