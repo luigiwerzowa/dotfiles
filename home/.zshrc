@@ -64,6 +64,9 @@ export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 export PATH=~/.local/bin:$PATH
 
+# antlr4
+export CLASSPATH=".:/usr/local/lib/antlr-4.9.2-complete.jar:$CLASSPATH"
+
 # Actually install plugins, prompt user input
 if ! zplug check --verbose; then
     printf "Install zplug plugins? [y/N]: "
